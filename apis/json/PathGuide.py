@@ -29,7 +29,7 @@ if __name__ == '__main__':
     get(data,'$..payno.payno')
 
     # part
-    get(data,'$..gjj_detail[*]')
+    get(data, '$..gjj_detail[*]')
     get(data, '$..gjj_detail[0]')
     get(data, '$..gjj_detail[-1:]')
     get(data, '$..gjj_detail[(@.length-1)]')

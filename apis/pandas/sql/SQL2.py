@@ -48,7 +48,7 @@ if __name__ == '__main__':
     println(pd.concat([table,table2]).drop_duplicates())
 
     # select * from table order by gender desc, age
-    println(table.sort_values(by=['gender', 'age'],ascending=[False, True]))
+    println(table.sort_values(by=['gender', 'age'], ascending=[False, True]))
 
     table['age_range'] = table['age'].map(age_range)
     println(table)
